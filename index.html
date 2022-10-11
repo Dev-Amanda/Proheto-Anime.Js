@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeta</title>
+</head>
+<body>
+    <div class="intro">
+        <div class="one"></div>
+    </div>
+    <div class="container">
+        <div class="container">
+            <svg class="svg" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <filter id="f4">
+                    <feOffset result="offOut" in="SourceGraphic" dx="0" dy="20" />
+                    <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+                        values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+                    <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="30" />
+                    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                </filter>
+                <defs>
+                    <linearGradient id="linear-gradient">
+                        <stop offset="0" stop-color="#a7ff83" />
+                        <stop offset="1" stop-color="#21e6c1" />
+                    </linearGradient>
+                </defs>
+                <path id="path"
+                    d="M229 457.999C73.8169 498.07 13.5719 566.554 0 642.999V0.99928C244.985 -1.2491 724 0.999285 724 0.999285C724 108.291 581.665 110.307 541.037 220.753C490 359.499 414.456 410.112 229 457.999Z"
+                    fill="url(#linear-gradient)" filter=url(#f4) />
+            </svg>
+            <svg class="svg2" viewBox="0 0 1921 1087" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="path2"
+                    d="M1683 258C1708.2 202 1857 133.667 1923 107V1082H905C927 912.5 1092 849.5 1146.5 835.5C1277.83 801.764 1468 726.5 1579 635C1690 543.5 1651.5 328 1683 258Z"
+                    fill="url(#linear-gradient)" filter=url(#f4) />
+            </svg>
+            <div class="wrapper">
+                <header>
+                    <div class="logo"></div>
+                    <nav class="cor">
+                        <ul>
+                            <li><a href="#">Casa</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Portfólio</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </header>
+                <div class="hero_section">
+                    <div class="part1">
+                        <h1>Cuide do seu <br><span>Planeta</span></h1>
+                       <br>
+                        <h2><p>Invista no seu futuro!</p></h2>
+                        <p>O Brasil, infelizmente, ainda tem nas usinas termoelétricas uma boa parcela de sua geração de energia. Por queimarem combustível, são usinas danosas ao planeta, logo economizar energia elétrica é uma boa forma de cuidar do meio ambiente.</p>
+                        <a href="#" id="click">Ver mais</a>
+                    </div>
+                    <div class="part2">
+                        <img src="img/—Pngtree—flat cartoon mother earth day_5900122.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
